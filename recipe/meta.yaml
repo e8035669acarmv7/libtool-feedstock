@@ -16,9 +16,11 @@ source:
     - 0003-apple-silicon.patch
     # This patch is applied after libtool is installed to avoid needing libtool for building libtool
     # - 0004-apple-silicon.patch
+    # Pass -fsanitize to linker, see https://lists.gnu.org/archive/html/libtool/2014-04/msg00026.html
+    - 0005-fsanitize.patch
 
 build:
-  number: 1007
+  number: 1008
   skip: True  # [win]
   ignore_run_exports:
     - libstdcxx-ng
@@ -58,3 +60,4 @@ extra:
     - jakirkham
     - mingwandroid
     - isuruf
+    - saraedum
