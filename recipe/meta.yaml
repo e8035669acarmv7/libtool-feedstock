@@ -38,8 +38,8 @@ requirements:
     - patch
 
 test:
-  commands:
-    - libtool --help
+  requires:
+    - {{ compiler('cxx') }}
 
 about:
   home: http://www.gnu.org/software/libtool/
