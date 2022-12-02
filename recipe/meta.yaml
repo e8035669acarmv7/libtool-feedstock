@@ -11,13 +11,8 @@ source:
     # From: https://bugs.debian.org/cgi-bin/bugreport.cgi?att=1;bug=557388;filename=link-as-needed.patch;msg=5
     # See: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=347650
     # and: https://sigquit.wordpress.com/2011/02/16/why-asneeded-doesnt-work-as-expected-for-your-libraries-on-your-autotools-project/
-    - 0001-link-as-needed.patch
-    - 0002-apple-silicon.patch
-    - 0003-apple-silicon.patch
-    # This patch is applied after libtool is installed to avoid needing libtool for building libtool
-    # - 0004-apple-silicon.patch
-    # Pass -fsanitize to linker, see https://lists.gnu.org/archive/html/libtool/2014-04/msg00026.html
-    - 0005-fsanitize.patch
+    - patches/0001-link-as-needed.patch
+    - patches/0002-apple-silicon.patch
 
 build:
   number: 0
