@@ -25,12 +25,12 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - m4
-    - help2man
-    - autoconf
-    - automake
-    - make
-    - patch
+    # - m4
+    # - help2man
+    # - autoconf
+    # - automake
+    # - make
+    # - patch
 
 test:
   requires:
